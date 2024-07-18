@@ -62,32 +62,7 @@
     display: block;
   }
 </style>
-<style>
-  .swiper-slide.swiper-slide-active>.slide\:w-full {
-    width: 100%;
-  }
 
-  .swiper-button-prev:after,
-  .swiper-rtl .swiper-button-next:after {
-    content: "" !important;
-  }
-
-  .swiper-wrapper {
-    height: max-content !important;
-
-  }
-
-  .swiper-button-next:after,
-  .swiper-rtl .swiper-button-prev:after {
-    content: "" !important;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: relative !important;
-  }
-</style>
-<script src="/assets/js/swiper.js"></script>
 <script src="/assets/js/wow.min.js"></script>
 <script>
   new WOW().init();
@@ -97,44 +72,7 @@
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
+  <script src="/assets/js/main.js"></script>
 </body>
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 2,
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper('.my-swiper', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 3,
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 2400,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".button-next",
-      prevEl: ".button-prev",
-    },
-  });
-</script>
 
 </html>
