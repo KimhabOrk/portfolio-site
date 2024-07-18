@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "Collection",
+    "link": "/collection"
+  },
+  {
+    "title": "Gallery",
+    "link": "/gallery"
+  },
+  {
+    "title": "About",
+    "link": "/about"
+  },
+  {
+    "title": "Contact",
+    "link": "/contact"
+  },
+  {
+    "title": "Blog",
+    "link": "https://digimoda.kimhabork.site"
+  }
+]

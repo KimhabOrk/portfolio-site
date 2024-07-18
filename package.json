@@ -1,0 +1,14 @@
+{
+    "name": "portfolio-site",
+    "version": "1.0",
+    "description": "Fashion Portfolio Website",
+    "author": "Kimhab Ork",
+    "license": "MIT",
+    "script": {
+      "build": "npx @devdojo/static build"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.10",
+        "tailwindcss": "latest"
+    }
+}

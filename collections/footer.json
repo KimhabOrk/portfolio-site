@@ -1,0 +1,34 @@
+{
+  "top": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "Collection",
+      "link": "/collection"
+    },
+    {
+      "title": "About",
+      "link": "/about"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "bottom": [
+    {
+      "title": "Blog",
+      "link": "https://digimoda.kimhabork.site"
+    },
+    {
+      "title": "Privacy Policy",
+      "link": "/pivacy"
+    },
+    {
+      "title": "Terms and Conditions",
+      "link": "/terms"
+    }
+  ]
+}
