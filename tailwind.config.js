@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+    "./**/*.{html,js}",
+    "./assets/js/preline.js",
+    "./assets/js/flowbite.js"
+  ],
   theme: {
     fontFamily: {
       sansSerif: ['Ubuntu', 'sans-serif'],
@@ -8,5 +12,10 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+    require('flowbite/plugin'),
+    require('daisyui'),
+  
+  ],
 }
