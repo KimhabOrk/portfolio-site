@@ -4,7 +4,7 @@
     "description": "Fashion Portfolio Website",
     "author": "Kimhab Ork",
     "license": "MIT",
-    "script": {
+    "scripts": {
       "build": "npx @devdojo/static build"
     },
     "devDependencies": {
