@@ -35,7 +35,6 @@
   <title>Fashion Portfolio Website</title>
 
   <!-- Library script -->
-  <script src="/assets/js/flowbite.js"></script>
   <script src="/assets/js/tailwindcss.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
   <script src="/assets/js/swiper-bundle.min.js"></script>
@@ -67,10 +66,12 @@
   new WOW().init();
 </script>
 <script src="/assets/js/main.js"></script>
-<body>
+
+<body class="bg-black text-white">
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
+  <script src="/assets/js/flowbite.js"></script>
 </body>
 
 </html>
