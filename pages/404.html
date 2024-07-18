@@ -1,19 +1,23 @@
   <layout src="main.html" title="404 - Error page">
-    <div class="h-screen bg-black  w-full flex flex-col justify-center items-center bg-[#1A2238]">
-      <h1 class="text-9xl font-extrabold text-white tracking-widest">404</h1>
-      <div class="bg-red-700 px-4 text-black font-bold text-sm rounded rotate-12 absolute">
-        Page Not Found
+    <section class="flex w-full h-full" id="404-container">
+      <div class="w-screen h-screen z-10 bg-gradient-to-tr from-gray-900 to-black">
+        <div class="flex justify-center items-center before:z-20 after:z-30">
+          <div class="bubble border-1 border-solid shadow-2xl shadow-gray-600 z-0" id="girllight"></div>
+          <div class="bubble border-1 border-solid shadow-2xl shadow-gray-400 z-20" id="hairgirl"></div>
+          <div class="bubble border-1 border-solid shadow-2xl shadow-gray-400 z-0" id="girllight"></div>
+          <div class="bubble border-1 border-solid shadow-2xl shadow-gray-500 z-30" id="hairgirl"></div>
+          <div class="bubble border-1 border-solid shadow-2xl shadow-gray-800 z-20" id="girllight"></div>
+          <div class="text-center flex flex-col justify-center items-center z-20 pt-14 mt-12 font-bold mt-16" id="zero">
+            <div class="content-center">
+              <h1 class="text-[125px] text-white font-bold text-center">404</h1>
+              <p class="text-[#FFFFFF] text-[22px] pb-6 font-bold text-center">It looks like you're lost...</p>
+              <button type="button"
+                class="h-[34px] w-[100px] rounded-xl bg-gradient-to-r from-pink-500 to-gray-600 border-gray-900 border-1 border-solid shadow-2xl shadow-gray-200">
+                <a href="/" class="text-md font-bold text-gray-200 m-2 p-2">Home</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="mt-4">
-        <a class="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
-          href="/index.html">
-          <span
-            class="absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-[#FF6A3D] group-hover:translate-y-0 group-hover:translate-x-0"></span>
-
-          <span class="relative block px-8 py-3 bg-[#1A2238] border border-current">
-            Go Home
-          </span>
-        </a>
-      </button>
-    </div>
+    </section>
   </layout>
