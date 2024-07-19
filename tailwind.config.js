@@ -3,8 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      sansSerif: ['Ubuntu', 'sans-serif'],
-      sans: ['Roboto', 'sans-serif'],
+      sans: ['Alumni Sans', 'sans-serif'],
+      'san-serif': ['League Gothic', 'sans-serif'],
+      serif: ['Vast Shadow', 'serif']
     },
     extend: {},
   },

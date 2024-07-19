@@ -64,36 +64,11 @@
     display: block;
   }
 </style>
+<script src="/assets/js/swiper.js"></script>
 <script src="/assets/js/wow.min.js"></script>
 <script>
   new WOW().init();
 </script>
-<style>
-  .swiper-slide.swiper-slide-active>.slide\:w-full {
-    width: 100%;
-  }
-
-  .swiper-button-prev:after,
-  .swiper-rtl .swiper-button-next:after {
-    content: "" !important;
-  }
-
-  .swiper-wrapper {
-    height: max-content !important;
-
-  }
-
-  .swiper-button-next:after,
-  .swiper-rtl .swiper-button-prev:after {
-    content: "" !important;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: relative !important;
-  }
-</style>
-
 <body class="bg-black text-white">
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
