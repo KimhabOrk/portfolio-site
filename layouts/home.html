@@ -32,22 +32,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>{title}</title>
+  <title>Fashion Portfolio Website</title>
+
 
   <!-- Library script -->
   <script src="/assets/js/flowbite.js"></script>
+  <script src="/assets/js/anime.min.js"></script>
   <script src="/assets/js/tailwindcss.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
   <script src="/assets/js/swiper-bundle.min.js"></script>
-  <script src="/assets/js/404.js"></script>
-  <script src="/assets/js/main.js"></script>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/daisyui.min.css">
   <link rel="stylesheet" href="/assets/css/flowbite.min.css">
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/assets/js/anime.min.js" />
-  <link rel="stylesheet" href="/assets/css/tailwinf.css" />
+  <link rel="stylesheet" href="/assets/css/animate.css" />
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
@@ -64,51 +63,79 @@
     display: block;
   }
 </style>
+<style>
+  .swiper-slide.swiper-slide-active>.slide\:w-full {
+    width: 100%;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: "" !important;
+  }
+
+  .swiper-wrapper {
+    height: max-content !important;
+
+  }
+
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: "" !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: relative !important;
+  }
+</style>
 <script src="/assets/js/swiper.js"></script>
 <script src="/assets/js/wow.min.js"></script>
 <script>
   new WOW().init();
 </script>
-<body class="bg-black text-white">
+
+<body>
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
-  <script>
-    var swiper = new Swiper('.mySwiper', {
-      pagination: '.swiper-pagination',
-      slidesPerView: 2,
-      centeredSlides: true,
-      paginationClickable: true,
-      loop: true,
-      spaceBetween: 30,
-      slideToClickedSlide: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-    });
-    var swiper = new Swiper('.my-swiper', {
-      pagination: '.swiper-pagination',
-      slidesPerView: 3,
-      centeredSlides: true,
-      paginationClickable: true,
-      loop: true,
-      spaceBetween: 30,
-      slideToClickedSlide: true,
-      autoplay: {
-        delay: 2400,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".button-next",
-        prevEl: ".button-prev",
-      },
-    });
-  </script>
 </body>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 2,
+    centeredSlides: true,
+    paginationClickable: true,
+    loop: true,
+    spaceBetween: 30,
+    slideToClickedSlide: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper('.my-swiper', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    centeredSlides: true,
+    paginationClickable: true,
+    loop: true,
+    spaceBetween: 30,
+    slideToClickedSlide: true,
+    autoplay: {
+      delay: 2400,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
+    },
+  });
+</script>
 
 </html>
