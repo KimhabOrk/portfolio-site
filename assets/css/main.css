@@ -7,14 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* Add Your Custom CSS Here */
 
-@layer base {
-  @font-face {
-    font-family: 'League Spartan', san-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-display: swap;
-  }
-}
 html body {
   background-color: black;
   height: 100vh;
