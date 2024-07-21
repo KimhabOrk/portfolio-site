@@ -50,6 +50,15 @@
   <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/tailwinf.css" />
 </head>
+<script>
+  window.day = true;
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.getItem('dark') && localStorage.getItem('dark') == 'true') {
+      document.documentElement.classList.add('dark');
+      window.day = false;
+    }
+  }
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
 <script>
@@ -76,4 +85,5 @@
   <include src="footer.html" title="Footer Navigator"></include>
 </body>
 <script src="/assets/js/flowbite.js"></script>
+
 </html>
