@@ -13,6 +13,7 @@ html body {
   width: 100vw;
   color: white;
 }
+
 h1 {
   font-family: "Vast Shadow", serif;
   font-weight: 600;
@@ -80,3 +81,26 @@ li {
   position: relative !important;
 }
 
+.swiper-slide.swiper-slide-active>.slide\:w-full {
+  width: 100%;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
+
+.swiper-wrapper {
+  height: max-content !important;
+
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "" !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+}

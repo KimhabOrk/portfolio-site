@@ -3,8 +3,6 @@ title: Design Creativity
 description: Design Creativity Module Detail
 ---
 
-# Design Creativity
-
 This course is designed to train the respective students the skill in producing 2 dimensional designs by utilizing
 basic elements and principles of design plus basic creative thinking method.
 

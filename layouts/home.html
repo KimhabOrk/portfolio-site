@@ -23,7 +23,7 @@
   <meta name="og:image" content="https://ik.imagekit.io/digiv3rse/portfolio-og.png?updatedAt=1719184813426">
   <meta name="og:site_name" content="Kimhab Ork-Fashion Portfolio">
   <meta name="og:description"
-    content="Dive into the captivating world of Kimhab Ork's portfolio. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
+    content="Dive into the captivating world of Fashion. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
 
   <link rel="canonical" href="http://kimhabork.site/">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,13 +32,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Fashion Portfolio Website</title>
+  <title>{titile}</title>
 
 
   <!-- Library script -->
   <script src="/assets/js/flowbite.js"></script>
   <script src="/assets/js/anime.min.js"></script>
-  <script src="/assets/js/tailwindcss.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
   <script src="/assets/js/swiper-bundle.min.js"></script>
   <!-- Stylesheet -->
@@ -47,7 +46,17 @@
   <link rel="stylesheet" href="/assets/css/flowbite.min.css">
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="/assets/css/animate.css" />
+{tailwindcss}
 </head>
+<script>
+  window.day = true;
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.getItem('dark') && localStorage.getItem('dark') == 'true') {
+      document.documentElement.classList.add('dark');
+      window.day = false;
+    }
+  }
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
 <script>
@@ -63,32 +72,6 @@
     display: block;
   }
 </style>
-<style>
-  .swiper-slide.swiper-slide-active>.slide\:w-full {
-    width: 100%;
-  }
-
-  .swiper-button-prev:after,
-  .swiper-rtl .swiper-button-next:after {
-    content: "" !important;
-  }
-
-  .swiper-wrapper {
-    height: max-content !important;
-
-  }
-
-  .swiper-button-next:after,
-  .swiper-rtl .swiper-button-prev:after {
-    content: "" !important;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: relative !important;
-  }
-</style>
-<script src="/assets/js/swiper.js"></script>
 <script src="/assets/js/wow.min.js"></script>
 <script>
   new WOW().init();
@@ -99,43 +82,7 @@
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
 </body>
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 2,
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper('.my-swiper', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 3,
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 2400,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".button-next",
-      prevEl: ".button-prev",
-    },
-  });
-</script>
-
+<script src="/assets/js/swiper.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/flowbite.js"></script>
 </html>
