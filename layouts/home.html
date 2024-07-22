@@ -48,16 +48,6 @@
   <link rel="stylesheet" href="/assets/css/animate.css" />
 {tailwindcss}
 </head>
-<script>
-  window.day = true;
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.getItem('dark') && localStorage.getItem('dark') == 'true') {
-      document.documentElement.classList.add('dark');
-      window.day = false;
-    }
-  }
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -72,6 +62,7 @@
     display: block;
   }
 </style>
+<script src="/assets/js/main.js"></script>
 <script src="/assets/js/wow.min.js"></script>
 <script>
   new WOW().init();
@@ -83,6 +74,5 @@
   <include src="footer.html" title="Footer Navigator"></include>
 </body>
 <script src="/assets/js/swiper.js"></script>
-<script src="/assets/js/main.js"></script>
 <script src="/assets/js/flowbite.js"></script>
 </html>
