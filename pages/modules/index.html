@@ -1,12 +1,23 @@
 <layout src="main.html" title="{frontmatter.title}">
-  <div class="relative w-full px-6 pt-10 pb-10 lg:pb-5 lg:mb-0 lg:px-0 text-white bg-black">
+  <div class="relative w-full px-6 pt-10 pb-6 lg:pb-5 lg:mb-0 lg:px-0 text-white bg-black">
     <div class="flex flex-col items-center justify-center max-w-3xl mx-auto">
-      <h1 class="mb-5 text-3xl font-white text-start lg:leading-[1.2] sm:text-4xl lg:text-5xl">
+      <h1 class="mb-4 text-3xl font-white text-start lg:leading-[1.2] sm:text-4xl lg:text-5xl">
         {frontmatter.title}
       </h1>
     </div>
   </div>
-  <main class="relative z-30 pb-1 mx-auto lg:max-w-4xl text-white">
+  <style>
+    p h2 {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    img {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  </style>
+  <main class="relative z-30 pb-4 mx-auto lg:max-w-4xl bg-black text-white">
     <!-- <h1 class="w-full mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none">{frontmatter.title}</h1> -->
     <article class="w-full max-w-3xl px-6 mx-auto mb-20 prose-sm prose px-0 lg:prose-xl">
       {content}
