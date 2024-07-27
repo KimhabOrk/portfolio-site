@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Alumni Sans', 'League Spartan', 'sans-serif'],
-      'sans-serif': ['League Gothic', 'sans-serif'],
-      serif: ['Vast Shadow', 'serif']
+      Sans: ['Alumni Sans', 'League Spartan', 'sans-serif'],
+      SansSerif: ['League Gothic', 'sans-serif'],
+      Serif: ['Vast Shadow', 'serif']
     },
     extend: {},
   },
