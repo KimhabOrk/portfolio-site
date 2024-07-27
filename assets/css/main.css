@@ -38,18 +38,6 @@ li {
   font-style: normal;
 }
 
-ul {
-  list-style-type: circle;
-  margin: 6px;
-  padding: 6px;
-  list-style-position: inside;
-}
-
-ul li {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
 #menu-toggle:checked+#menu {
   display: block;
 }
