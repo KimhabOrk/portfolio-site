@@ -45,7 +45,7 @@
   <link rel="stylesheet" href="/assets/css/flowbite.min.css">
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="/assets/css/animate.css" />
-  {tailwindcss}
+{tailwindcss}
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
 <script>
@@ -68,13 +68,10 @@
 </script>
 
 <body>
-  <div class="w-screen animated-background h-screen bg-gradient-to-r from-black via-gray-800 to-gray-950">
-    <include src="navbar.html" title="Header Navigator Bar"></include>
-    {slot}
-    <include src="footer.html" title="Footer Navigator"></include>
-  </div>
+  <include src="navbar.html" title="Header Navigator Bar"></include>
+  {slot}
+  <include src="footer.html" title="Footer Navigator"></include>
 </body>
 <script src="/assets/js/swiper.js"></script>
 <script src="/assets/js/flowbite.js"></script>
-
 </html>

@@ -71,12 +71,10 @@
   new WOW().init();
 </script>
 
-<body class="text-white">
-  <div class="w-screen animated-background h-screen bg-gradient-to-r from-black via-gray-800 to-gray-950">
-    <include src="navbar.html" title="Header Navigator Bar"></include>
-    {slot}
-    <include src="footer.html" title="Footer Navigator"></include>
-  </div>
+<body class="bg-black text-white">
+  <include src="navbar.html" title="Header Navigator Bar"></include>
+  {slot}
+  <include src="footer.html" title="Footer Navigator"></include>
 </body>
 <script src="/assets/js/flowbite.js"></script>
 
