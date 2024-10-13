@@ -43,21 +43,14 @@
   <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/tailwind.css" />
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-63C29CPRKY"></script>
 <script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'G-63C29CPRKY');
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-63C29CPRKY');
 </script>
 <style>
   #menu-toggle:checked+#menu {
@@ -71,7 +64,6 @@
 </script>
 
 <body class="bg-black text-white">
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKCN2C3M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
