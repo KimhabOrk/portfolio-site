@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Kimhab Ork - Fashion Portfolio">
-  <meta name="description"
-    content="Dive into the captivating world of Kimhab Ork's portfolio. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
+  <meta name="description" content="Dive into the captivating world of Kimhab Ork's portfolio. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
   <meta name="keywords" content="fashion portfolio, fashion, portfolio, lecturer">
   <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -22,8 +21,7 @@
   <meta name="og:url" content="https://kimhabork.site/">
   <meta name="og:image" content="https://ik.imagekit.io/digiv3rse/portfolio-og.png?updatedAt=1719184813426">
   <meta name="og:site_name" content="Kimhab Ork-Fashion Portfolio">
-  <meta name="og:description"
-    content="Dive into the captivating world of Kimhab Ork's portfolio. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
+  <meta name="og:description" content="Dive into the captivating world of Kimhab Ork's portfolio. Experience the perfect blend of style, innovation, and creativity. Get ready to be inspired by their stunning collection.">
 
   <link rel="canonical" href="http://kimhabork.site/">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -37,7 +35,7 @@
   <!-- Library script -->
   <script src="/assets/js/tailwindcss.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
-<script src="/assets/js/swiper-bundle.min.js"></script>  <!-- Stylesheet -->
+  <script src="/assets/js/swiper-bundle.min.js"></script> <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/daisyui.min.css">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
@@ -45,15 +43,21 @@
   <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/tailwind.css" />
 </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-QJ89MPVWTN');
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'G-63C29CPRKY');
 </script>
 <style>
   #menu-toggle:checked+#menu {
@@ -65,10 +69,13 @@
 <script>
   new WOW().init();
 </script>
+
 <body class="bg-black text-white">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKCN2C3M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <include src="navbar.html" title="Header Navigator Bar"></include>
   {slot}
   <include src="footer.html" title="Footer Navigator"></include>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
 </html>
